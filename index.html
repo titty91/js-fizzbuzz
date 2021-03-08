@@ -15,16 +15,23 @@
      for (var i=0; i<=100; i=i+1){
        console.log(i,i%2);
        if(i%3 == 0){
-         console.log('Multiplidi3Fizz');
+         console.log('3Fizz (' + i + ')');
        } else if(i%5 == 0){
-         console.log('Multiplidi5Buzz');
-       } else if(i%3 == 0 , i%5 == 0){
-         console.log('FizzBuzz');
+         console.log('5Buzz (' + i + ')');
+       } else if(i%3 == 0 && i%5 == 0){
+         console.log('FizzBuzz3&5 (' + i + ')');
        }
 
      }
-
-
+// altro modo
+     if(i%3 == 0 && i%5 == 0){
+       console.log('FizzBuzz3&5 (' + i + ')');
+     }else if(i%3 == 0){
+       console.log('3Fizz (' + i + ')');
+     } else{
+       //(i%5 == 0)
+       console.log('5Buzz (' + i + ')');
+     }
      </script>
   </body>
 </html>
